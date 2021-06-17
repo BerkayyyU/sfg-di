@@ -7,7 +7,7 @@ import tr.edu.berkayulguel.trakya.sfgdi.services.GreetingService;
 
 @Controller
 public class ConstructorInjectedController {
-    
+
     private final GreetingService greetingService;
 
     public ConstructorInjectedController(@Qualifier("constructorInjectedGreetingService")
