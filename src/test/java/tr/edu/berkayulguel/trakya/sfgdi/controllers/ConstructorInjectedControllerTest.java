@@ -2,9 +2,7 @@ package tr.edu.berkayulguel.trakya.sfgdi.controllers;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import tr.edu.berkayulguel.trakya.sfgdi.services.GreetingServiceImpl;
-
-import static org.junit.jupiter.api.Assertions.*;
+import tr.edu.berkayulguel.trakya.sfgdi.services.ConstructorInjectedGreetingService;
 
 class ConstructorInjectedControllerTest {
 
@@ -12,7 +10,7 @@ class ConstructorInjectedControllerTest {
 
     @BeforeEach
     void setUp() {
-        constructorInjectedController = new ConstructorInjectedController(new GreetingServiceImpl());
+        constructorInjectedController = new ConstructorInjectedController(new ConstructorInjectedGreetingService());
     }
 
     @Test
